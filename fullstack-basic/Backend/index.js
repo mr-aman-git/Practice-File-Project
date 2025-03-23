@@ -6,7 +6,7 @@ app.get("/", (req, res)=>{
 })
 
 
-app.get("/jokes", (req, res) => {
+app.get("/api/jokes", (req, res) => {
   const jokes = [
     {
       id: 1,
@@ -83,7 +83,7 @@ app.get("/jokes", (req, res) => {
   res.send(jokes);
 });
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4040;
 app.listen(port, () => {
   console.log(`server at  http://localhost:${port}`);
 });
